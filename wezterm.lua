@@ -11,6 +11,7 @@ config = {
 	color_scheme = "JWR dark (terminal.sexy)",
 	font = wezterm.font("JetBrains Mono"),
 	font_size = 13,
+
 	background = {
 		{
 			source = {
@@ -21,19 +22,21 @@ config = {
 			opacity = 0.90,
 		}
 	},
+
 	initial_cols = 100,
-	initial_rows = 25
+	initial_rows = 25,
+
+	window_frame = {
+	  border_left_width = '0.1cell',
+	  border_right_width = '0.1cell',
+	  border_bottom_height = '0.05cell',
+	  border_top_height = '0.05cell',
+	  border_left_color = '#292929',
+	  border_right_color = '#292929',
+	  border_bottom_color = '#292929',
+	  border_top_color = '#292929',
+	}
 }
 
-config.window_frame = {
-  border_left_width = '0.1cell',
-  border_right_width = '0.1cell',
-  border_bottom_height = '0.05cell',
-  border_top_height = '0.05cell',
-  border_left_color = '#292929',
-  border_right_color = '#292929',
-  border_bottom_color = '#292929',
-  border_top_color = '#292929',
-}
 
 return config
