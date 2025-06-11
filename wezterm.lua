@@ -2,15 +2,14 @@ local wezterm = require("wezterm")
 
 config = wezterm.config_builder()
 
-
 config = {
 	automatically_reload_config = true,
 	window_decorations = "RESIZE",
 	enable_tab_bar = false,
 	default_cursor_style = "SteadyUnderline",
 	color_scheme = "JWR dark (terminal.sexy)",
-	font = wezterm.font("JetBrains Mono"),
-	font_size = 13,
+	font = wezterm.font("JetBrains Mono" , { weight = 'Bold', italic = false }),
+	font_size = 11.5,
 
 	background = {
 		{
@@ -37,6 +36,5 @@ config = {
 	  border_top_color = '#292929',
 	}
 }
-
 
 return config
