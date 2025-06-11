@@ -3,6 +3,7 @@ local wezterm = require("wezterm")
 config = wezterm.config_builder()
 
 config = {
+	enable_wayland = false,
 	automatically_reload_config = true,
 	window_decorations = "RESIZE",
 	enable_tab_bar = false,
